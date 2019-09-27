@@ -72,4 +72,7 @@ module "db" {
 
   # Database Deletion Protection
   deletion_protection = true
+
+  #Ignore lifecycle changes for password
+  ignore_password_changes = true
 }

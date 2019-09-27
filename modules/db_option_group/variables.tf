@@ -30,6 +30,11 @@ variable "options" {
   default     = []
 }
 
+variable "ignore_password_changes" {
+  description = "Terraform will not destroy/re-create RDS for password changes."
+  default     = false
+}
+
 variable "tags" {
   type        = "map"
   description = "A mapping of tags to assign to the resource"

@@ -45,6 +45,7 @@ module "db_option_group" {
   option_group_description = "${var.option_group_description}"
   engine_name              = "${var.engine}"
   major_engine_version     = "${var.major_engine_version}"
+  ignore_password_changes  = "${var.ignore_password_changes}"
 
   options = ["${var.options}"]
 

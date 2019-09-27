@@ -223,6 +223,11 @@ variable "options" {
   default     = []
 }
 
+variable "ignore_password_changes" {
+  description = "Terraform will not destroy/re-create RDS for password changes."
+  default     = false
+}
+
 variable "create_db_subnet_group" {
   description = "Whether to create a database subnet group"
   default     = true

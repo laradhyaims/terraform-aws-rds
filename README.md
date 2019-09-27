@@ -84,6 +84,8 @@ module "db" {
     }
   ]
 
+  ignore_password_changes = true
+
   options = [
     {
       option_name = "MARIADB_AUDIT_PLUGIN"
